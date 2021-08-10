@@ -1,0 +1,10 @@
+there are two kinds of trajectory tracking waypoint methods.
+
+1. time prior
+The points in trajectory are updated and given in a high frequency. The USV always tracks the latest point without considering the error to the last point.
+file folder: circle track
+
+
+2. accuracy prior
+The trajectory points are updated and given in a low frequency. Before seeking the next point, the USV must track the current given point within a given accuracy.
+file folder:point track
